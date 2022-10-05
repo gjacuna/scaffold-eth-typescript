@@ -114,7 +114,16 @@ const renderOwnerInvoice: FC<RenderInvoiceProps> = (props) => {
               Dispute
             </Button>
           </>
-        ))}
+        )) ||
+        (invoice.status === 'Resolved' && invoice.rule === 'Vendor Wins' && (
+          <Button
+            onClick={(): void => {
+              void handleCall('withdrawAfterRuling', [BigNumber.from(invoice.id)]);
+            }}>
+            Withdraw Payment
+          </Button>
+        )) ||
+        (invoice.status === 'Resolved' && invoice.rule === 'Buyer Wins' && <Text>Lost Ruling. Buyer Won.</Text>)}
       <>
         <Button
           onClick={(): void => {
@@ -196,7 +205,16 @@ const renderBuyerInvoice: FC<RenderInvoiceProps> = (props) => {
               Withdraw Cancellation
             </Button>
           </>
-        ))}
+        )) ||
+        (invoice.status === 'Resolved' && invoice.rule === 'Buyer Wins' && (
+          <Button
+            onClick={(): void => {
+              void handleCall('withdrawAfterRuling', [BigNumber.from(invoice.id)]);
+            }}>
+            Withdraw Payment
+          </Button>
+        )) ||
+        (invoice.status === 'Resolved' && invoice.rule === 'Vendor Wins' && <Text>Lost Ruling. Vendor Won.</Text>)}
     </>
   );
 };

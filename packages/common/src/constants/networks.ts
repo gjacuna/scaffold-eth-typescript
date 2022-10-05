@@ -50,7 +50,7 @@ export const NETWORKS = {
     chainId: 5,
     faucet: 'https://goerli-faucet.slock.it/',
     blockExplorer: 'https://goerli.etherscan.io/',
-    url: `https://goerli.infura.io/v3/${INFURA_ID}`,
+    url: `https://eth-goerli.g.alchemy.com/v2/z6y1gA8ZEfhflFL2SjnjeudGmYdpRlrk`,
   },
   xdai: {
     name: 'xdai',

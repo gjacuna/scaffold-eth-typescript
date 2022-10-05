@@ -84,7 +84,7 @@ contract LikInvoice is ERC721, ERC721Enumerable, Ownable, ReentrancyGuard, IArbi
     return super.supportsInterface(interfaceId);
   }
 
-  function mintItem(address to, uint8 _paymentDays) public payable returns (uint256) {
+  function mintItem(address to, uint8 _paymentDays, string memory _metaEvidence) public payable returns (uint256) {
     require(to != msg.sender, "ERROR: Buyer cannot invoice themselves.");
     require(msg.value > 0, "ERROR: You cannot pay or lock a value of zero.");
 
@@ -102,6 +102,7 @@ contract LikInvoice is ERC721, ERC721Enumerable, Ownable, ReentrancyGuard, IArbi
     _safeMint(to, id);
 
     emit Minted(msg.sender, to, id);
+    emit MetaEvidence(id, _metaEvidence);
 
     return id;
   }

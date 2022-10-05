@@ -108,8 +108,8 @@ const MintInvoice: FC = () => {
       <Title>Try it out today!</Title>
       <Text>
         Contract Deployed to Goerli:{' '}
-        <Link href="https://goerli.etherscan.io/address/0xFd5FfefC8a2c6bfcbE08E5298f86BE575A1202CE" target="_blank">
-          0xFd5FfefC8a2c6bfcbE08E5298f86BE575A1202CE
+        <Link href="https://goerli.etherscan.io/address/0x63DaA4FefB49F0b5c37ee5942cA11BAB2E13F8Ad" target="_blank">
+          0x63DaA4FefB49F0b5c37ee5942cA11BAB2E13F8Ad
         </Link>
       </Text>
     </Card>
