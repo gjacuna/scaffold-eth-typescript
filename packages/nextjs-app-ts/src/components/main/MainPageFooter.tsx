@@ -107,6 +107,22 @@ export const MainPageFooter: FC<IMainPageFooterProps> = (props) => {
     <>
       {left}
       <Suspense fallback={<div></div>}>{right}</Suspense>
+      Built using{' '}
+      <a href="https://github.com/scaffold-eth/" target="_blank" rel="noreferrer">
+        🏭 Scaffold-Eth{' '}
+      </a>
+      <span>
+        v2.1 - [
+        <a href="https://youtu.be/aYMj00JoIug" target="_blank" rel="noreferrer">
+          <span style={{ marginRight: 4 }}>🎥 </span> 8min speed run
+        </a>
+        ] - [
+        <a href="https://trello.com/b/ppbUs796/buidlguidlcom-idea-board" target="_blank" rel="noreferrer">
+          <span style={{ marginRight: 4 }}>💡 </span> trello
+        </a>
+        ]{' '}
+      </span>
+      .
     </>
   );
 };

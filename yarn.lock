@@ -1507,6 +1507,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kleros/erc-792@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "@kleros/erc-792@npm:8.0.0"
+  checksum: 83933929df92698eb3808f53e5e2eb911bdcb1cc9df648acddb513e461ccb64e3efc34c58c78070138c7c3be037dc6a85cfaa20bf6778131e2f59a32e3526eb6
+  languageName: node
+  linkType: hard
+
 "@maticnetwork/maticjs@npm:^3.4.0-beta.0":
   version: 3.4.0-beta.0
   resolution: "@maticnetwork/maticjs@npm:3.4.0-beta.0"
@@ -2120,6 +2127,7 @@ __metadata:
     "@ethersproject/providers": ^5.6.8
     "@ethersproject/solidity": ^5.6.1
     "@ethersproject/units": ^5.6.1
+    "@kleros/erc-792": ^8.0.0
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.10"
     "@nomiclabs/hardhat-solhint": ^2.0.1
     "@nomiclabs/hardhat-waffle": ^2.0.3
@@ -2136,6 +2144,7 @@ __metadata:
     "@types/qrcode-terminal": ^0.12.0
     "@typescript-eslint/eslint-plugin": ^5.30.7
     "@typescript-eslint/parser": ^5.30.7
+    base64-sol: ^1.1.0
     bip39: ^3.0.4
     chai: ^4.3.6
     chalk: ^4.1.2
@@ -5683,6 +5692,13 @@ __metadata:
   version: 1.5.1
   resolution: "base64-js@npm:1.5.1"
   checksum: 669632eb3745404c2f822a18fc3a0122d2f9a7a13f7fb8b5823ee19d1d2ff9ee5b52c53367176ea4ad093c332fd5ab4bd0ebae5a8e27917a4105a4cfc86b1005
+  languageName: node
+  linkType: hard
+
+"base64-sol@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "base64-sol@npm:1.1.0"
+  checksum: 9bea828af71e6adcf7c841cf0001e03bd1eae8cc1aef86daedb36f04117b2a626ac23631f700d56a24515f88c2021d7ebdbee4608369f66c53e51c0b4b39ee47
   languageName: node
   linkType: hard
 
